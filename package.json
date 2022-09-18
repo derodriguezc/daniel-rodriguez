@@ -1,0 +1,18 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open --e2e -b chrome"
+  },
+  "keywords": [],
+  "author": "Daniel Rodriguez",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.4.0"
+  },
+  "dependencies": {
+    "cypress-xpath": "^2.0.1"
+  }
+}

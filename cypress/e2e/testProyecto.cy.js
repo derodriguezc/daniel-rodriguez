@@ -77,7 +77,7 @@ describe("Proyecto Pushng IT", () => {
         shoppingCarPage.checkProductPrice(products.nombreProductoDos, products.precioProductoDos);
         shoppingCarPage.showTotalPrice();
         shoppingCarPage.checkTotalPrice(`${products.precioProductoUno + products.precioProductoDos}`);
-        checkOutPage.clickCheckOutButton();
+        shoppingCarPage.clickCheckOutButton();
         checkOutPage.writeFirstName(checkOut.nombre);
         checkOutPage.writeLastName(checkOut.apellido);
         checkOutPage.writeCreditCard(checkOut.tarjeta);

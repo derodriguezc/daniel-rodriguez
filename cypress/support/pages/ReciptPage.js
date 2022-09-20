@@ -7,10 +7,10 @@ export class ReciptPage {
     }
 
     waitCheck(){
-        cy.wait(10000)
+        cy.get("[role='progressbar']", {timeout:10000}).should("not.exist")
     }
     checkUserName(userName){
-        cy.get(this.elementName).contains(userName)
+        cy.get(this.elementName).should('include.text' , userName)
     }
 
     checkProductName(producto){
@@ -22,7 +22,7 @@ export class ReciptPage {
     }
 
     checkTotalPrice(priceTotal){
-        cy.get(this.elementPrice).contains(priceTotal)
+        cy.get(this.elementPrice).should('include.text' , priceTotal)
     }
 
     clickThankYouButton(){
